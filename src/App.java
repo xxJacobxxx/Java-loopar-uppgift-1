@@ -2,16 +2,11 @@ import java.util.Scanner;
 public class App {
     
     public static void main(String[] args) throws Exception {
-        int fält[]=new int[5];
-        Scanner in = new Scanner(System.in);
-        for(int i=0;i<5;i++){
-            System.out.println("Skriv in tal nr "+i);
-            fält[i]=in.nextInt();
-
-        }
-        System.out.println("Här kommer talen");
-        for(int i=4; i>=0;i--){
-            System.out.println(fält[i]);
+        System.out.println("Säg ett nummer mellan -2147483647 och 2147483647");
+        Scanner in= new Scanner(System.in);
+        int tal = in.nextInt();
+        for (int i=0; i<tal;i++){
+            System.out.print("*");
         }
     }
 }
