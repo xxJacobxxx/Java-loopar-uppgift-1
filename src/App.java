@@ -10,7 +10,7 @@ public class App {
 
         }
         System.out.println("Här kommer talen");
-        for(int i=0; i<5;i++){
+        for(int i=4; i>=0;i--){
             System.out.println(fält[i]);
         }
     }
