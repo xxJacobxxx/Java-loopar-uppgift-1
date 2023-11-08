@@ -5,8 +5,13 @@ public class App {
         System.out.println("Säg ett nummer mellan -2147483647 och 2147483647");
         Scanner in= new Scanner(System.in);
         int tal = in.nextInt();
-        for (int i=0; i<tal;i++){
-            System.out.print("*");
+        System.out.println("Hur många columner beviljas?");
+        int column = in.nextInt();
+        for(int i=0; i<column;i++){
+            System.out.println();
+            for (int j=0; j<tal;j++){
+                System.out.print("*");
+            }
         }
     }
 }
